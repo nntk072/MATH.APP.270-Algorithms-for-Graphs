@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 from graafi import Graph
-from CountShortest_dum import CountShortest
+from CountShortest_dum import *
 
 def ReadSet(filename):
     ff = open(filename,'r')

@@ -55,7 +55,12 @@ class Graph:
             return []
 
     def isAdj(self, u,v):
-        ## Return true if (u,v) is an edge
+        # Return true if (u,v) is an edge
+        for i in self.AL[u]:
+            if v == i:
+                for t in self.AL[v]:
+                    if u == t:
+                        return True
         return False
     
     """ input method for files """
